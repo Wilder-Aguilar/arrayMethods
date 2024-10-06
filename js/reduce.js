@@ -7,12 +7,11 @@ const shoppingCart = [
     {name: 'Celular', price: 700}, 
   ]
 
-//forEach
+//Con forEach creamos una variable extra
   let total= 0;
   shoppingCart.forEach( producto => total += producto.price);
   console.log (total);
 
 //Reduce
-
   let resultado = shoppingCart.reduce((total,producto) => total + producto.price, 0 );
   console.log(resultado);
