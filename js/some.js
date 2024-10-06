@@ -16,15 +16,16 @@ meses.forEach(mes => {
         console.log("Enero si existe")
     }
 })
-    //Con includes (para arreglos)
+    //Con includes (para arreglos, NO SOPORTA DE OBJETOS)
 const resultado = meses.includes('Enero');
 console.log(resultado)
 
 const resultado1 = meses.includes('Diciembre');
 console.log(resultado1)
 
-    // .some para arreglo de objetos
 
+//.SOME APLICA A LOS DOS CASOS
+    // .some para arreglo de objetos
 const existe = carrito.some((producto) => {
     return producto.nombre === 'Celular'
 })
@@ -34,7 +35,6 @@ const existe1 = carrito.some(producto => producto.nombre === 'Celular'
 )
 console.log(existe1);
 
-//
-
+    // some para arreglos tradicionales
 const existe2 = meses.some( mes => mes === 'Febrero');
 console.log(existe2)
